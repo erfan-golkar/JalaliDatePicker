@@ -11,6 +11,28 @@ $controls-btn-size: 1.5rem;
 $controls-btn-padding: math.div($controls-btn-size, 6);
 $mobileQuerySize: 481px;
 
+:root { /* light */
+	--jdp-color-0: #fff;
+	--jdp-color-1: #f0f0f0;
+	--jdp-color-2: #e0e0e0;
+	--jdp-color-3: #b6b6b6;
+	--jdp-color-4: #838383;
+	--jdp-color-5: #333;
+	--jdp-primary: #569ff7;
+	--jdp-red: #f44336;
+}
+
+[data-theme="dark"], [data-bs-theme="dark"] {
+    --jdp-color-0: #212121;
+    --jdp-color-1: #2b2b2b;
+    --jdp-color-2: #3a3a3a;
+    --jdp-color-3: #666;
+    --jdp-color-4: #999;
+    --jdp-color-5: #ccc;
+    --jdp-primary: #569ff7;
+    --jdp-red: #f44336;
+}
+
 jdp-overlay {
 	width: 0;
 	height: 0;
@@ -29,14 +51,6 @@ jdp-overlay {
 
 jdp-container {
 	--jdp-day-size: 43px;
-	--jdp-color-0: #fff;
-	--jdp-color-1: #f0f0f0;
-	--jdp-color-2: #e0e0e0;
-	--jdp-color-3: #b6b6b6;
-	--jdp-color-4: #838383;
-	--jdp-color-5: #333;
-	--jdp-primary: #569ff7;
-	--jdp-red: #f44336;
 
 	position: absolute;
 	max-width: $calendarWidth;
@@ -45,12 +59,7 @@ jdp-container {
 	display: none;
 	direction: rtl;
 	padding: 0.5rem 0;
-	box-shadow:
-		1px 0 0 var(--jdp-color-2),
-		-1px 0 0 var(--jdp-color-2),
-		0 1px 0 var(--jdp-color-2),
-		0 -1px 0 var(--jdp-color-2),
-		0 3px 13px var(--jdp-color-2);
+	box-shadow: 0 0.5rem 1rem #00000026;
 	border-radius: $radius;
 	overflow: hidden;
 	touch-action: manipulation;
