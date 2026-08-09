@@ -22,7 +22,7 @@ $mobileQuerySize: 481px;
 	--jdp-red: #f44336;
 }
 
-[data-theme="dark"] {
+[data-theme="dark"], [data-bs-theme="dark"] {
     --jdp-color-0: #212121;
     --jdp-color-1: #2b2b2b;
     --jdp-color-2: #3a3a3a;
